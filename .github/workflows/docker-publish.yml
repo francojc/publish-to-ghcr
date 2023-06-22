@@ -23,6 +23,6 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build & Publish to Github Container registry
         run:  | 
-                 docker build . --tag ghcr.io/francojc/hello-docker-gcr-demo:latest
-                 docker run ghcr.io/francojc/hello-docker-gcr-demo:latest
-                 docker push ghcr.io/francojc/hello-docker-gcr-demo:latest
+           docker build . --tag ghcr.io/francojc/hello-docker-ghcr-demo:latest
+           docker run ghcr.io/francojc/hello-docker-ghcr-demo:latest
+           docker push ghcr.io/francojc/hello-docker-ghcr-demo:latest
